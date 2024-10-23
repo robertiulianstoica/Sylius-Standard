@@ -1,0 +1,13 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const quantityField = document.querySelector('input[name="sylius_add_to_cart[cartItem][quantity]"]');
+        if (quantityField) {
+            quantityField.addEventListener('change', function() {
+                console.log(quantityField.value)
+                if (quantityField.value === '70') {
+                    alert('Great choice!');
+                }
+            });
+        }
+    });
+</script>
